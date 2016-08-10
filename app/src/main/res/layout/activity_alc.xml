@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kevali.doldimeter04.alcActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:textSize="25dp"
+        android:onClick="calcPromille"
+        android:layout_marginTop="5dp"
+        android:id="@+id/goButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gewicht (kg)"
+        android:id="@+id/gewichtTxt"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geschlecht (m/f)"
+        android:id="@+id/geschlechtTxt"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bier (0.33l)"
+        android:id="@+id/bierTxt"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wein (0.1l)"
+        android:id="@+id/weinTxt"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schnaps 38% (0.02l)"
+        android:id="@+id/schnapsTxt"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="240dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promille"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/promilleTxt"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text = "0"
+        android:id="@+id/gewichtInput"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text = "m/f"
+        android:layout_alignTop="@+id/geschlechtTxt"
+        android:layout_toEndOf="@+id/goButton"
+        android:layout_toRightOf="@+id/goButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/bierInput"
+        android:textSize="20dp"
+        android:text = "0"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/weinInput"
+        android:textSize="20dp"
+        android:text = "0"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="200dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/schnapsInput"
+        android:textSize="20dp"
+        android:text = "0"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/promilleOutput"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bier"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:alpha = "0.2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/weinInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="457dp"
+        android:layout_marginStart="457dp"></RelativeLayout>
+
+
+</RelativeLayout>
